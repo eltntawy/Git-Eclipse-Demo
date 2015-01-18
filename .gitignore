@@ -4,7 +4,6 @@
 .mtj.tmp/
 
 # Package Files #
-*.jar
 *.war
 *.ear
 
@@ -13,3 +12,8 @@ hs_err_pid*
 /nbproject/private/
 /Git-Eclipse-Demo1/nbproject/private/
 /bin/
+/build/
+/JavaFXSwingApplication1/nbproject/private/
+/JavaFXSwingApplication1/build/
+/JavaFXApplication1/nbproject/private/
+/JavaFXApplication1-Preloader/nbproject/private/
