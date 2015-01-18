@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 
 
@@ -17,6 +18,7 @@ public class GitEclipseDemo {
         System.out.println("yasmine momen Commit");
         System.out.println("Marwa Ibraheem Commit");
         System.out.println("yasmine momen Commit2");
-    }
+        System.out.println("Commit 2");
+
     
-}
+}}
