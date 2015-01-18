@@ -16,7 +16,10 @@ public class GitEclipseDemo {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+
         System.out.println("Youmna Nasser Commit");
+        System.out.println("Marwa Ibraheem Commit");
+        System.out.println("Commit 2");
     }
     
 }
