@@ -4,6 +4,7 @@ import com.chat.view.MainPanel;
 import de.javasoft.plaf.synthetica.SyntheticaStandardLookAndFeel;
 import de.javasoft.plaf.synthetica.SyntheticaWhiteVisionLookAndFeel;
 import git.eclipse.demo.TestLookAndFeelForm;
+import java.awt.Dimension;
 import java.awt.Frame;
 import javax.swing.JFrame;
 import javax.swing.SwingUtilities;
@@ -40,9 +41,9 @@ public class Main {
         
         final JFrame frame = new JFrame("Massanger");
         initLookAndFeel(frame);
-        frame.setSize(400,800);
+        frame.setSize(315,800);
         frame.add(new MainPanel());
-        
+        frame.setMinimumSize(new Dimension(315, 500));
         
         frame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         

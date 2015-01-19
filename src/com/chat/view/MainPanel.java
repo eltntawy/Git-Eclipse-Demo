@@ -62,6 +62,7 @@ public class MainPanel extends javax.swing.JPanel {
         lblUserImage.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/chat/view/resource/img/messenger.png"))); // NOI18N
         jPanel1.add(lblUserImage);
 
+        jLabel1.setFont(new java.awt.Font("Dialog", 0, 18)); // NOI18N
         jLabel1.setText("User Name");
 
         cbBoxUserStatus.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Available", "Busy", "Away" }));
@@ -74,24 +75,22 @@ public class MainPanel extends javax.swing.JPanel {
                 .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(userPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(userPanelLayout.createSequentialGroup()
-                        .addComponent(jLabel1)
-                        .addGap(0, 0, Short.MAX_VALUE))
-                    .addGroup(userPanelLayout.createSequentialGroup()
-                        .addComponent(cbBoxUserStatus, 0, 198, Short.MAX_VALUE)
-                        .addContainerGap())))
+                    .addComponent(cbBoxUserStatus, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, 198, Short.MAX_VALUE))
+                .addContainerGap())
         );
         userPanelLayout.setVerticalGroup(
             userPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, userPanelLayout.createSequentialGroup()
                 .addGap(0, 0, Short.MAX_VALUE)
-                .addGroup(userPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                .addGroup(userPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(userPanelLayout.createSequentialGroup()
-                        .addComponent(jLabel1)
+                        .addGap(6, 6, 6)
+                        .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(cbBoxUserStatus)
-                        .addContainerGap())
-                    .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(cbBoxUserStatus, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap())
         );
 
         cbBoxUserStatus.setRenderer(new StatusListCellRender());
@@ -116,7 +115,7 @@ public class MainPanel extends javax.swing.JPanel {
         contactPanelLayout.setVerticalGroup(
             contactPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, contactPanelLayout.createSequentialGroup()
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 664, Short.MAX_VALUE)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 652, Short.MAX_VALUE)
                 .addContainerGap())
         );
 
@@ -199,7 +198,7 @@ public class MainPanel extends javax.swing.JPanel {
             }
 
             if (isSelected) {
-                contact.setBackground(new Color(51, 153, 255));
+                contact.setBackground(Resource.HIGHLIGHT_COLOR);
             }
 
             return contact;
@@ -232,7 +231,7 @@ public class MainPanel extends javax.swing.JPanel {
             }
 
             if (isSelected) {
-                status.setBackground(new Color(51, 153, 255));
+                status.setBackground(Resource.HIGHLIGHT_COLOR);
             }
 
             return status;
